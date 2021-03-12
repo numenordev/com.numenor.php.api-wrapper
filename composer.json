@@ -1,0 +1,35 @@
+{
+    "name": "numenor/api-wrapper",
+    "description": "A system for quickly developing PHP wrapper clients around remote APIs",
+    "keywords": ["php", "remote", "api", "REST", "wrapper", "client"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nick Rupert",
+            "email": "nickrupert7@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "ext-json": "*",
+        "nesbot/carbon": "^2.42",
+        "petrknap/php-singleton": "^1.0",
+        "guzzlehttp/guzzle": "^7.2",
+        "illuminate/collections": "^8.21",
+        "symfony/string": "^5.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Numenor\\ApiWrapper\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
